@@ -2,17 +2,25 @@
 <head>
 <meta charset="UTF-8">
 <title>canvasで図形を描く</title>
-<script src="randam.js"></script>
+<script src="index.js">
+</script>
 </head>
 <body>
-  <p>8パズル</p>
-  <canvas id="c" style="background-color:white;" width=300 height=300></canvas>
-  
-  <p>画像データのURL:
-  <input id="url" type="text" value="http://freesozai.jp/sozai/roadsign/img/rds_004/1.png">
-  </p>
-  <input type="button" value="Load" onclick="loadImage()">
-  <input type="button" value="Shuffle" onclick="shuffle()">
- 
+    <p>8パズル</p>
+    <canvas id="c" style="background-color:white;" width=300 height=300></canvas>
+    
+    <p>画像データのURL:
+    <input id="url" type="text" value="">
+    </p>
+    <input type="button" value="Load" onclick="loadImage()">
+    <input type="button" value="Shuffle" onclick="shuffle()">
+    <p>パズルのマス数:
+        <select id="puzzle">
+            <option value="3">9</option>
+            <option value="4">16</option>
+            <option value="5">25</option>
+        </select>
+    </p>
+    <input type="button" value="変更" onclick="puzzlechange()">
 </body>
 </html>
