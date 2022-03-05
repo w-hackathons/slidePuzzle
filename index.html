@@ -1,34 +1,18 @@
-<!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>スライドパズル</title>
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>canvasで図形を描く</title>
+<script src="randam.js"></script>
 </head>
 <body>
-    <!-- ここに内容を書いていく -->
-    <div class="title">スライドパズル</div>
-    <img class="image" id="image" src="">
-    <input 
-        onclick="selectDifficulty(difficulty, 1)"
-        type="button"
-        value="easy"> 
-        <input 
-        onclick="selectDifficulty(difficulty, 2)"
-        type="button"
-        value="normal"> 
-        <input 
-        onclick="selectDifficulty(difficulty, 3)"
-        type="button"
-        value="hard"> 
-        <br>
-        
-    <!-- 内容終了 -->
-    <script src="index.js"></script>
-    <script src="randam.js"></script>
-
+  <p>8パズル</p>
+  <canvas id="c" style="background-color:white;" width=300 height=300></canvas>
+  
+  <p>画像データのURL:
+  <input id="url" type="text" value="http://freesozai.jp/sozai/roadsign/img/rds_004/1.png">
+  </p>
+  <input type="button" value="Load" onclick="loadImage()">
+  <input type="button" value="Shuffle" onclick="shuffle()">
+ 
 </body>
 </html>
