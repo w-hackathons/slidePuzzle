@@ -2,6 +2,8 @@ const sampleImg = "https://3.bp.blogspot.com/-8tO27OaQmKo/W1vhDEBgLMI/AAAAAAABNt
 const imageArea = document.getElementById("image");
 imageArea.src = sampleImg;
 
+
+
 // 画像のリサイズを行う関数
 // direction=縦横　0なら横のサイズ、1なら縦のサイズを指定する
 function imageResize(direction, size){
